@@ -116,7 +116,7 @@ if calculation_type == "Calculate Power":
 else:
     required_teachers = calculate_sample_size(effect_size, outcome_share, use_clustering=(use_clustering=="Yes"), icc=icc if use_clustering=="Yes" else 0)
     st.markdown(f'**Required number of teachers (total for both intervention and comparison groups): {required_teachers}**')
-    st.markdown(f'**Number of teachers per group: {required_teachers // 2}**')
+    st.markdown(f'**Minimum number of fellows needed: {required_teachers // 2}**')
 
 st.write("""
 
