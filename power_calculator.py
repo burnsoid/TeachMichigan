@@ -127,7 +127,7 @@ else:
 st.write("""
 
 Understanding these results:
-- For power calculations: Higher power (closer to 1) indicates a greater likelihood of detecting a true effect if it exists. Typically, a power of 0.80 or higher is considered adequate.
+- For power calculations: Higher power (closer to 1) indicates a greater likelihood of detecting an effect if it exists. Typically, a power of 0.80 or higher is considered adequate (80%+ chance of detecting an effect).
 - For sample size calculations: The result shows the total number of teachers needed (split equally between intervention and comparison groups) to achieve 80% power for detecting the specified effect size.
 
 """)
