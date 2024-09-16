@@ -93,7 +93,13 @@ if use_clustering == "Yes":
     - Use a lower ICC if student outcomes are expected to be more independent of their teacher, or if teacher effectiveness is believed to be relatively uniform within the treatment and control groups.
     - Note: An ICC can be as high as 1, but this calculator stops at 0.5 to allow the user to more easily make small adjustments with the slider.
 
-    Accounting for clustering (by using an ICC > 0) typically reduces the effective sample size, which can result in lower power or require a larger sample size.
+    Accounting for clustering (by using an ICC > 0) typically reduces the effective sample size, which can result in lower power or require a larger sample size. For guidance on the size of ICC to use, please refer to Hedges & Hedberg (2014) and Shen et al. (2022).
+    
+    References:
+    
+    Hedges, L. & Hedberg, E. C. (2014). Intraclass Correlations and Covariate Outcome Correlations for Planning Two- and Three-Level Cluster-Randomized Experiments in Education. Evaluation Review, 37(6): 435-554. https://doi.org/10.1177/0193841X14529126
+
+    Shen, Z., Curran, F. C., You, Y., Splett, J. W., & Zhang, H. (2022). Intraclass Correlations for Evaluating the Effects of Teacher Empowerment Programs on Student Educational Outcomes. Educational Evaluation and Policy Analysis, 45(1): 134-156. https://doi.org/10.3102/01623737221111400
     """)
 
     icc = st.slider('Intraclass Correlation Coefficient (ICC):', 0.0, 0.5, 0.2, 0.01)
