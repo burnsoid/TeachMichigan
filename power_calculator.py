@@ -117,7 +117,7 @@ if calculation_type == "Calculate Power":
         color = 'green' if val >= 0.8 else 'black'
         return f'color: {color}'
     
-    st.dataframe(results_df.style.format({'Effect Size': '{:.2f}', 'Power': '{:.3f}'}).applymap(color_power, subset=['Power']))
+    st.dataframe(results_df.style.format({'Effect Size': '{:.2f}', 'Power': '{:.3f}'}).map(color_power, subset=['Power']))
 
 else:
     required_teachers = calculate_sample_size(effect_size, outcome_share, use_clustering=(use_clustering=="Yes"), icc=icc if use_clustering=="Yes" else 0)
